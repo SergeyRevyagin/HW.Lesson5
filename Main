@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        Employee[] emp = new Employee[5];
+        emp[0] = new Employee("Иванов Иван", "инженер", "ivivan@mailbox.com", "892312312", 30000, 30);
+        emp[1] = new Employee("Сергеев Сергей", "врач", "ser@mailbox.com", "898672472", 40000, 41);
+        emp[2] = new Employee("Николаев Николай", "таксист", "taxi@mailbox.com", "89742847", 20000, 20);
+        emp[3] = new Employee("Александров Александр", "директор", "alex@mailbox.com", "89111111", 90000, 54);
+        emp[4] = new Employee("Илюхин Илья", "уборщик", "ilya@mailbox.com", "89000000", 15000, 66);
+
+        for (int i = 0; i < emp.length; i++) {
+            if(emp[i].age>40){
+                emp[i].infoEmployee();
+                System.out.println("===========================");
+            }
+        }
+    }
+}
